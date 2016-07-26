@@ -12,7 +12,7 @@
         <h5>简单使用</h5>
         <p>创建版本库。创建一文件目录，在目录下执行git init。然后编辑文本文件后，执行git add file把文件添加到仓库。多次执行添加后，执行git commit -m "本次修改的注释"将所有添加提交到仓库。使用git status可查看仓库当前的状态，如修改了那些文件。使用git diff file可以具体查看某个文件具体所做变动。可使用git log查看版本库的提交记录，使用git reset --hard HEAD^恢复版本库到上一个提交版本，可以使用HEAD~10指定第前10个版本。当然也可通过指定commit id的方式，id可在log命令输出中查看。可使用git reflog查看git命令执行的历史。在刚刚创建的仓库中有工作区，暂存区stage和git为我们创建的第一个master分支。git add后文件会暂时存放在仓库的暂存区，然后通过commit提交到master分支。git只对修改进行管理，所有修改必须通过git add提交到暂存区后，在可以进行提交，否则修改的内容无法进行提交。可使用git diff HEAD -- file查看工作区和版本库中最新版本的区别，以确认工作区的修改是否提交。如果修改了工作区的文件，但还没有add，此时想丢弃修改，可使用git checkout -- file丢弃工作区的修改。但已经add到暂存区而又想丢去，则可通过git reset HEAD file后再通过前面的checkout进行丢弃。而如果已经commit到本地仓库，则可进行版本回退。如果已经推送到远程仓库，就么有什么办法了。如果希望删除文件，则git rm file后，然后git commit提交删除到版本库。</p>
         <p>分支管理。</p>
-        <p>远程管理。可以使用github.com作为远端服务器，也可自己搭建git服务器。由于github使用ssh进行通信，所以需在本地产生ssh key并将公钥添加到github上面。首先使用ssh-keygen命令产生公钥和私钥，然后将公钥添加到github上面。</p>
+        <p>远程管理。可以使用github.com作为远端服务器，也可自己搭建git服务器。由于github使用ssh进行通信，所以需在本地产生ssh key并将公钥添加到github上面。首先使用ssh-keygen命令产生公钥和私钥，然后将公钥添加到github上面。然后准备将本地仓库push到github上面。首先git remote add origin git@github.com:g0012552/usegit.git，推送到远端git push -u origin master。在添加远端时如果使用：https://github.com/g00125520/usegit.git，则在推送的时会出现403鉴权失败。 </p>
         <p>配置。git config --global user.name/user.email ""。每台机器需自报家门。使用global参数指定机器上的所有仓库都使用该参数，当然也可为每个仓库独立指定。</p>
         <h5>参考资料</h5>
         <ul>
