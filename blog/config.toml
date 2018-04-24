@@ -2,6 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "works in fm"
 theme = "hugo_theme_pickles"
+hasCJKLanguage = true
 
 [params]
   paginate = 10
