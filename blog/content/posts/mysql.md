@@ -292,3 +292,7 @@ TODO: 这个问题很复杂，需要深入学习分析。
 
 
 索引的使用。
+
+
+### ref
+- [数据库设计开发最佳实践](http://confluence.shopforce.cn/pages/viewpage.action?pageId=1541514)
