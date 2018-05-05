@@ -6,3 +6,7 @@ draft: true
 
 bash使用技巧。
 
+### script
+
+### command
+find ./content -name *md
