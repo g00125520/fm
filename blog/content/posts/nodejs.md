@@ -23,6 +23,9 @@ cnpm install [name]
 [npm命令使用](https://npmjs.org/doc/)
 
 #### react
+
+
+
 ```
 cnpm install -g create-react-app
 create-react-app my-app
@@ -31,4 +34,5 @@ create-react-app my-app
 
 #### ECMAScript 6
 
-[ECMAScript 6 简介](http://es6.ruanyifeng.com/#docs/intro)
+- [ECMAScript 6 简介](http://es6.ruanyifeng.com/#docs/intro)
+- [ant design components](https://ant.design/components/form-cn/)
